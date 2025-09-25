@@ -1,4 +1,4 @@
-# Problema-del-coctel
+# Problema del coctel
 ## Descripción del proyecto
 
 El proyecto consiste en recrear el problema de la “fiesta de cóctel”, que aborda el desafío de aislar la voz de una persona en un entorno donde múltiples fuentes sonoras se encuentran activas simultáneamente. Para ello, se instalará un arreglo de tres micrófonos en una sala de laboratorio, estratégicamente distribuidos para captar combinaciones diferentes de las señales generadas por tres participantes, cada uno emitiendo una frase distinta desde posiciones y orientaciones fijas.
@@ -67,5 +67,17 @@ En las tres gráficas se observa un claro predominio de energía en frecuencias 
 
 Por último, estas gráficas muestran la densidad espectral de potencia de los tres audios originales. Analizandolas generalmente, se puede estimar cómo se distribuye la energía de la señal a lo largo de las frecuencias, proporcionando una vista más suave y menos ruidosa que la FFT directa. En el eje x (escala logarítmica) se representan las frecuencias de 10 Hz a 10 kHz, mientras que en el eje y se muestra la densidad de potencia (energía por unidad de frecuencia). En las tres señales se observa un comportamiento general, picos entre 200Hz y 1000 Hz, rangos usuales para las voces, la energía es mucho mayor en bajas frecuencias, disminuyendo de manera abrupta después de 1 kHz, lo cual indica que el contenido útil de la señal se en la zona inicial, pero, se observa que en frecuaencias altas, la energíe es minima, por lo tanto, el ruido no domina el espectro y las señales son principalmente voz.
 
+Finalmente, encontramos el analisis de las voces aisladas:
 
+![image](https://github.com/felipeacosta-m/Problema-del-coctel/blob/8ac03e4d192e2790796c886c92621902f9c6d6d4/Voz%20aislada1.png)
+![image](https://github.com/felipeacosta-m/Problema-del-coctel/blob/8ac03e4d192e2790796c886c92621902f9c6d6d4/Voz%20aislad2.png)
+![image](https://github.com/felipeacosta-m/Problema-del-coctel/blob/8ac03e4d192e2790796c886c92621902f9c6d6d4/Voz%20aislada3.png)
+
+En estas gráficas se puede observar el resultado de la separación de la voz usando ICA, la cual permite extraer la señal que contiene mayor energía asociada a la voz y reducir el aporte de ruido de fondo. De estas podemos ver que:
+
+1) Las amplitudes ahora tienen valores más altos en comparación con las señales originales, lo que indica que la voz se ha resaltado y normalizado.
+2) Los tramos de baja energía se reducen, eliminando gran parte del ruido de fondo capturado en las grabaciones originales.
+3) Las oscilaciones muestran mayor simetría y claridad, lo que corresponde a la mejora en la relación señal/ruido (SNR).
+
+Por lo tanto, el proceso de separación logró resaltar las partes útiles de la señal (voz), reduciendo el ruido de fondo y mejorando la inteligibilidad de las grabaciones.
 
