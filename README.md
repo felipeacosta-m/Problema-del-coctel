@@ -1,4 +1,4 @@
-<img width="621" height="935" alt="image" src="https://github.com/user-attachments/assets/df476334-7efa-4217-b923-a58dd21d3479" /># Problema-del-coctel
+# Problema-del-coctel
 ## Descripción del proyecto
 
 El proyecto consiste en recrear el problema de la “fiesta de cóctel”, que aborda el desafío de aislar la voz de una persona en un entorno donde múltiples fuentes sonoras se encuentran activas simultáneamente. Para ello, se instalará un arreglo de tres micrófonos en una sala de laboratorio, estratégicamente distribuidos para captar combinaciones diferentes de las señales generadas por tres participantes, cada uno emitiendo una frase distinta desde posiciones y orientaciones fijas.
