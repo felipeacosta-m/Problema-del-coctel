@@ -28,10 +28,10 @@ Existen otros métodos para aislamiento de señales de interés como:
 *Filtrado Adaptativo: minimizar el error entre la señal deseada y la interferencia
 *Transformada de Fourier de Corto tiempo: analiza y filtra señales en el dominio de la frecuencia y espacio
 
-### Diferencias entre ICA y Beamforming
-####ICA
+## Diferencias entre ICA y Beamforming
+##ICA
 Funciona como mezclas de señales de diferentes fuentes, separa señales superpuestas independientes y opera en el dominio estadístico y matemático
-####Beamforming
+##Beamforming
 Se enfoca en una dirección específica mediante manipulación de micrófonos, funciona con señales espaciales y opera en el dominio espacial.
 
 ##Transformada Rápida de Fourier (FFT)
