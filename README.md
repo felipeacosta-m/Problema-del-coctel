@@ -28,13 +28,13 @@ Existen otros métodos para aislamiento de señales de interés como:
 *Filtrado Adaptativo: minimizar el error entre la señal deseada y la interferencia
 *Transformada de Fourier de Corto tiempo: analiza y filtra señales en el dominio de la frecuencia y espacio
 
-## Diferencias entre ICA y Beamforming
-##ICA
+### Diferencias entre ICA y Beamforming
+## ICA
 Funciona como mezclas de señales de diferentes fuentes, separa señales superpuestas independientes y opera en el dominio estadístico y matemático
 ##Beamforming
 Se enfoca en una dirección específica mediante manipulación de micrófonos, funciona con señales espaciales y opera en el dominio espacial.
 
-##Transformada Rápida de Fourier (FFT)
+## Transformada Rápida de Fourier (FFT)
 Es un método distinto de medición de audio, en donde se descompone una señal en sus componentes espectrales individuales y este proporciona información sobre su composición, este método es utilizado para análisis de errores, control de calidad y manejo de las condiciones del audio.  Este algoritmo calcula la Transformada Discreta de Fourier (DFT) la cual es una herramienta fundamental en el procesamiento de señales para convertir una señal en el dominio del tiempo al dominio de la frecuencia. 
 La transformada Discreta de Fourier analiza todas las frecuencias discretas y proporciona una representación espectral de la señal y está dada por la siguiente ecuación:
 
