@@ -1,4 +1,4 @@
-# Problema-del-coctel
+<img width="621" height="935" alt="image" src="https://github.com/user-attachments/assets/df476334-7efa-4217-b923-a58dd21d3479" /># Problema-del-coctel
 ## Descripción del proyecto
 
 El proyecto consiste en recrear el problema de la “fiesta de cóctel”, que aborda el desafío de aislar la voz de una persona en un entorno donde múltiples fuentes sonoras se encuentran activas simultáneamente. Para ello, se instalará un arreglo de tres micrófonos en una sala de laboratorio, estratégicamente distribuidos para captar combinaciones diferentes de las señales generadas por tres participantes, cada uno emitiendo una frase distinta desde posiciones y orientaciones fijas.
@@ -42,4 +42,30 @@ La transformada Discreta de Fourier analiza todas las frecuencias discretas y pr
 
 La FFT es una algoritmo que reduce la complejidad computacional para que el calculo de la DFT sea aún más rápido. 
 Para este laboratorio se tomaron las audio grabados y se hallo la Transformada Rapida de Fourier y se obtuvieron las siguientes graficas
+
+![image](https://github.com/felipeacosta-m/Problema-del-coctel/blob/40202e6a2c1c288008d0bd477be5dd8eff4d8ba1/Graficas%20audios.png)
+
+En estas tres gráficas se observa la representación de cada señal de audio en el dominio del tiempo. En el eje x se muestra el tiempo en segundos (aproximadamente 0 a 36 s) y en el eje y se representa la amplitud de la señal en voltios.
+
+Se evidencia que las tres señales presentan secciones de silencio o baja amplitud (ruido de fondo) al inicio y entre algunos intervalos de la grabación, seguidas de segmentos donde la amplitud aumenta de forma significativa, lo que corresponde a la presencia de voz.
+
+Audio 1: muestra una amplitud moderada y un patrón de habla intermitente, con pausas entre frases y mayor estabilidad en la envolvente de la señal.
+
+Audio 2: presenta la mayor amplitud pico a pico de las tres señales, lo que indica que su energía es más alta. Esto puede corresponder a una voz más fuerte o a mayor presencia de ruido.
+
+Audio 3: tiene una amplitud intermedia, con una señal más uniforme y menos picos extremos que el audio 2, lo que sugiere menor distorsión o saturación.
+
+![image](https://github.com/felipeacosta-m/Problema-del-coctel/blob/40202e6a2c1c288008d0bd477be5dd8eff4d8ba1/Graficas%20fourier.png)
+
+En estas gráficas se muestra el resultado de aplicar la Transformada Rápida de Fourier (FFT) a cada una de las señales de audio. La FFT permite transformar la señal del dominio del tiempo al dominio de la frecuencia, facilitando la identificación de qué frecuencias están presentes en cada señal y con qué magnitud.
+
+En el eje x se representan las frecuencias desde 0 hasta 8000 Hz (mitad de la frecuencia de muestreo de 16 kHz), mientras que el eje y muestra la magnitud de la transformada, la cual es un indicador de la energía de cada componente de frecuencia.
+
+En las tres gráficas se observa un claro predominio de energía en frecuencias bajas, especialmente en el rango de 0 a 1000 Hz, lo cual es característico de la voz humana ya que la mayoría de su energía se concentra en este rango. La energía disminuye rápidamente conforme aumentan las frecuencias, lo que sugiere que el contenido de altas frecuencias es reducido.
+
+![image](https://github.com/felipeacosta-m/Problema-del-coctel/blob/40202e6a2c1c288008d0bd477be5dd8eff4d8ba1/Graficas%20densidad%20espectral.png)
+
+Por último, estas gráficas muestran la densidad espectral de potencia de los tres audios originales. Analizandolas generalmente, se puede estimar cómo se distribuye la energía de la señal a lo largo de las frecuencias, proporcionando una vista más suave y menos ruidosa que la FFT directa. En el eje x (escala logarítmica) se representan las frecuencias de 10 Hz a 10 kHz, mientras que en el eje y se muestra la densidad de potencia (energía por unidad de frecuencia). En las tres señales se observa un comportamiento general, picos entre 200Hz y 1000 Hz, rangos usuales para las voces, la energía es mucho mayor en bajas frecuencias, disminuyendo de manera abrupta después de 1 kHz, lo cual indica que el contenido útil de la señal se en la zona inicial, pero, se observa que en frecuaencias altas, la energíe es minima, por lo tanto, el ruido no domina el espectro y las señales son principalmente voz.
+
+
 
